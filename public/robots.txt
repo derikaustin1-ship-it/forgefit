@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://forge-fitness-demo.vercel.app/sitemap.xml

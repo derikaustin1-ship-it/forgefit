@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Outfit', sans-serif;
+    --font-sans: 'Inter', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0B0D0F;
+    color: #9CA3AF;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom Utilities for Premium Fitness Aesthetic */
+.bg-forge-dark {
+  background-color: #0B0D0F;
+}
+
+.bg-forge-card {
+  background-color: #121519;
+}
+
+.bg-forge-surface {
+  background-color: #181C22;
+}
+
+.border-forge-border {
+  border-color: #242933;
+}
+
+.text-forge-lime {
+  color: #CCFF00;
+}
+
+.bg-forge-lime {
+  background-color: #CCFF00;
+}
+
+.border-forge-lime {
+  border-color: #CCFF00;
+}
+
+.hover\:bg-forge-lime-hover:hover {
+  background-color: #D8FF33;
+}
+
+/* Subtle glowing accent effect */
+.glow-lime {
+  box-shadow: 0 0 25px rgba(204, 255, 0, 0.15);
+}
+
+.glow-lime-sm {
+  box-shadow: 0 0 12px rgba(204, 255, 0, 0.2);
+}
+
+/* Image overlay gradient */
+.hero-gradient {
+  background: linear-gradient(180deg, rgba(11, 13, 15, 0.6) 0%, rgba(11, 13, 15, 0.85) 60%, #0B0D0F 100%);
+}
+
+.section-gradient {
+  background: linear-gradient(180deg, #0B0D0F 0%, #121519 50%, #0B0D0F 100%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0D0F;
+}
+::-webkit-scrollbar-thumb {
+  background: #242933;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #CCFF00;
+}
